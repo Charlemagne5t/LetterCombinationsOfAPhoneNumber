@@ -17,7 +17,7 @@ public class SolutionTest {
     @Test
     public void letterCombinationsTest2(){
         String digits = "";
-        List<String> expected = new ArrayList<>(List.of());
+        List<String> expected = new ArrayList<>();
         List<String> actual = new Solution().letterCombinations(digits);
 
         Assert.assertEquals(expected, actual);
@@ -27,7 +27,7 @@ public class SolutionTest {
     @Test
     public void letterCombinationsTest3(){
         String digits = "2";
-        List<String> expected = new ArrayList<>(List.of("a","b","c","bd"));
+        List<String> expected = new ArrayList<>(List.of("a","b","c"));
         List<String> actual = new Solution().letterCombinations(digits);
 
         Assert.assertEquals(expected, actual);
